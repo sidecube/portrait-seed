@@ -92,7 +92,7 @@ to a fallible model, not a proof that every description will obey it.
 ## 4. Supply your own API access
 
 The default image endpoint uses `gpt-image-1-mini`; check access and billing in
-your own OpenAI account. No API key is bundled. The program reads only
+your own OpenAI account. The program reads only
 `OPENAI_API_KEY` from the process environment, never automatically from `.env`.
 
 For a private prompt without shell history containing the key, run Python from

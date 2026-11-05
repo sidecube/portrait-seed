@@ -1,6 +1,6 @@
 # Portrait Seed
 
-**This repository is pre-packaged for an AI coding agent. Give the agent its GitHub link or this ZIP and ask it to read [AGENTS.md](AGENTS.md): it will have a step-by-step setup plan, verification commands, and clear points where you supply model files, an API key, and permission to use the camera or make a paid request.** Code and instructions are included; model weights, credentials and a configured computer are not.
+**This repository is pre-packaged for an AI coding agent. Give the agent its GitHub link or this ZIP and ask it to read [AGENTS.md](AGENTS.md): it will have a step-by-step setup plan, verification commands, and clear points where you supply model files, an API key, and permission to use the camera or make a paid request.**
 
 ![Camera, local description and a fictional portrait collection](docs/images/overview.png)
 
@@ -103,7 +103,7 @@ Read the full project article at [SIDECUBE — Feature Fusion](https://sidecube.
 
 ## License and illustration
 
-Code: [MIT](LICENSE), copyright Deian Berar. External libraries, downloaded model files and API services retain their own licenses and terms; none of their model weights or credentials are included.
+Code: [MIT](LICENSE), copyright Deian Berar. External libraries, downloaded model files and API services retain their own licenses and terms.
 
 The overview is an AI-generated conceptual illustration, not a camera capture or a pipeline benchmark. The data-flow drawings are authored SVG diagrams of the code. Details and generation prompt: [ILLUSTRATIONS.md](docs/ILLUSTRATIONS.md).
 

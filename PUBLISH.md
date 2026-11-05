@@ -7,7 +7,7 @@ Suggested repository name: **portrait-seed**
 
 Suggested GitHub About description (copy as one line):
 
-> AI-agent-ready camera-to-portrait core: local Qwen analysis, text-based image generation and a saved portrait collection. No UI, keys or model weights included.
+> AI-agent-ready camera-to-portrait core: local Qwen analysis, text-based image generation and a saved portrait collection.
 
 Suggested topics: `python`, `generative-art`, `portrait-generation`, `qwen`,
 `local-inference`, `privacy`, `computer-vision`, `openai`.
