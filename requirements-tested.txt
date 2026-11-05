@@ -1,0 +1,7 @@
+# Direct dependencies used for the Windows Python 3.11 verification run.
+# Not a platform lockfile; dependencies retain their own transitive requirements.
+Pillow==12.3.0
+httpx==0.28.1
+openai==2.54.0
+opencv-python-headless==4.14.0.94
+

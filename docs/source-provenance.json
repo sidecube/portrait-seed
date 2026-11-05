@@ -1,0 +1,15 @@
+{
+  "source": "offline_studio/local_traits.py",
+  "source_sha256": "70f91700dcd984da0803856c76436ab155d8ee188c34e90563613a1a863b42f5",
+  "functions_sha256": {
+    "validate_description": "a269b94e6e94dc60e21621e70b25d7ca422df789a580827a6ca855fb48a7fd97",
+    "analysis_payload": "5126809cdc9e447248351cc97dd8c4f217fba79efcf604f733c20b4352128466",
+    "portrait_prompt": "678172efd83da52e45c3e18ae743782eb79f60f6613e2bdbc6eaf42322b263a0"
+  },
+  "changes": [
+    "Exception type renamed.",
+    "Installation style label made generic.",
+    "Allowed trait names reduced to 14; sex_presentation omitted.",
+    "Transport, lifecycle and storage replaced by standalone modules."
+  ]
+}

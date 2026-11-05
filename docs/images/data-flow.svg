@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">Portrait Seed data flow</title><desc id="desc">Camera frames go to a local Qwen service. Only validated descriptions and an optional previously generated portrait go to OpenAI. Results are saved locally.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#315a85"/></marker></defs>
+<rect width="1200" height="660" fill="#f7f4ed"/>
+<g font-family="Arial,sans-serif" fill="#202522">
+<text x="42" y="54" font-size="30" font-weight="bold">One frame. A local description. A saved portrait.</text>
+<rect x="32" y="85" width="1136" height="250" rx="12" fill="#ecefe8" stroke="#889b88"/>
+<text x="54" y="119" font-size="18" font-weight="bold">YOUR COMPUTER · LOCAL ANALYSIS</text>
+<g fill="#fffdf8" stroke="#b5b9af"><rect x="54" y="153" width="260" height="135" rx="8"/><rect x="375" y="153" width="385" height="135" rx="8"/><rect x="820" y="153" width="325" height="135" rx="8"/></g>
+<text x="74" y="186" font-size="21" font-weight="bold">1 · Camera worker</text><text x="74" y="219" font-size="17">One selected frame in RAM</text><text x="74" y="248" font-size="17">No photo or video file</text>
+<text x="395" y="186" font-size="21" font-weight="bold">2 · Qwen via llama-server</text><text x="395" y="219" font-size="17">127.0.0.1:8795 · no redirects/proxy</text><text x="395" y="248" font-size="17">Image → visible-feature descriptions</text>
+<text x="840" y="186" font-size="21" font-weight="bold">3 · Validate text</text><text x="840" y="219" font-size="17">Exact keys and bounded values</text><text x="840" y="248" font-size="17">Worker ends after analysis</text>
+<g stroke="#315a85" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M314 221H368"/><path d="M760 221H813"/><path d="M990 288V428"/></g>
+<text x="1008" y="365" font-size="17" fill="#315a85">Validated text</text>
+<rect x="32" y="431" width="520" height="172" rx="12" fill="#ecefe8" stroke="#889b88"/>
+<text x="54" y="467" font-size="21" font-weight="bold">5 · Local portrait collection</text><text x="54" y="502" font-size="17">Generated PNG + description + lineage + attempts</text><text x="54" y="534" font-size="17">SQLite commit first, PNG/JSON export second</text><text x="54" y="566" font-size="17">Generated results are retained until you remove them</text>
+<rect x="735" y="431" width="433" height="172" rx="12" fill="#e5ebf3" stroke="#315a85"/>
+<text x="757" y="467" font-size="21" font-weight="bold">4 · OpenAI Images · EXTERNAL</text><text x="757" y="502" font-size="17">Text → image, or edit a generated parent</text><text x="757" y="534" font-size="17">No visitor photograph in this request</text><text x="757" y="566" font-size="17">Paid API · at most 3 attempts per capture</text>
+<path d="M735 550H562" stroke="#315a85" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/><text x="573" y="579" font-size="16" fill="#315a85">Generated PNG</text>
+<path d="M552 452C615 380 680 380 750 430" stroke="#315a85" stroke-width="2" stroke-dasharray="6 4" fill="none" marker-end="url(#arrow)"/>
+<text x="367" y="378" font-size="16" fill="#315a85">Optional: previous generated portrait, hash checked</text>
+<text x="42" y="638" font-size="16">Descriptions leave the computer. Model-server memory and provider retention are separate from this code.</text>
+</g></svg>
